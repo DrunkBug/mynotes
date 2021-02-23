@@ -1,0 +1,7 @@
+公司入域电脑更新遇到 0x8024401c 解决办法
+Windows 10 加入網域後連線到 WSUS 碰到的錯誤 0x8024401f 跟 0x8024401c
+在 CMD （管理员权限）：
+
+net stop wuauserv
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate
+net start wuauserv
